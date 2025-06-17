@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Singleton</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        button { margin: 5px; padding: 10px; }
+        #carrito { margin-top: 20px; }
+    </style>
+    </head>
+    <body>
+    <h1>Carrito de Compras</h1>
+
+    <!-- Botones agregar al carrito-->
+    <button onclick="agregarProducto('Remera Azul')">Agregar Remera Azul</button>
+    <button onclick="agregarProducto('Remera Blanca')">Agregar Remera Blanca</button>
+    <button onclick="agregarProducto('Remera Negra')">Agregar Remera Negra</button>
+    <button onclick="agregarProducto('Remera Rosa')">Agregar Remera Rosa</button>
+
+    <!-- Mostrar productos del carrito -->
+    <button onclick="mostrarCarrito()">Mostrar Carrito</button>
+    <button onclick="recorrerConIterator()">Recorrer con Iterator</button>
+    
+    <!-- Vaciar carrito  -->
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+
+    <!-- Resultado (Carrito) -->
+    <div id="carrito"></div>
+
+
+    <script src="carrito.js"></script>
+    </body>
+</html>
